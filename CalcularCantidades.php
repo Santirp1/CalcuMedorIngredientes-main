@@ -9,7 +9,7 @@ require_once 'clases/RepositorioRecetas.php';
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./assets/css/menu.css">
@@ -17,21 +17,21 @@ require_once 'clases/RepositorioRecetas.php';
 </head>
 <body>
 <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
- <label for="openSidebarMenu" class="sidebarIconToggle">
-   <div class="spinner diagonal part-1"></div>
-   <div class="spinner horizontal"></div>
-   <div class="spinner diagonal part-2"></div>
- </label>
- <div id="sidebarMenu">
-   <ul class="sidebarMenuInner">
+<label for="openSidebarMenu" class="sidebarIconToggle">
+  <div class="spinner diagonal part-1"></div>
+  <div class="spinner horizontal"></div>
+  <div class="spinner diagonal part-2"></div>
+</label>
+<div id="sidebarMenu">
+  <ul class="sidebarMenuInner">
       <li><a href="menu.php">Menu</a></li>
       <li><a href="CalcularCantidades.php">Calculador</a></li>
       <li><a href="ArmarRecetas.php">Armar Receta</a></li>
       <li><a href="ingredientes.php">Ingredientes</a></li>
       <li><a href="modificarDatos.php">Modificar Datos</a></li>
       <li><a href="index.php">Cerrar Sesion</a></li>
-   </ul>
- </div>
+  </ul>
+</div>
   <div class="container mx-auto flex justify-center align-center flex-col rounded my-100 shadow-md bg-gray-50">
     <div class="container flex flex-col items-center">
         <h1 class="my-4 text-zinc-600 text-3xl font-bold text-center font-extralight">
@@ -39,9 +39,6 @@ require_once 'clases/RepositorioRecetas.php';
         </h1>
         <label for="cars">Selecciona la receta</label>
             <select name="recetas" id="recetas" onchange="cambiarReceta()">
-              <option id="1" value="receta1">Receta1</option>
-              <option id="2" value="receta2">Receta2</option>
-              <option value="receta3">Receta3</option>
               <option value="receta4">Receta4</option>
               <?php
               $rr = new RepositorioRecetas();

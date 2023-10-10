@@ -23,6 +23,7 @@ if (strLen($arrRecetas[1]) > 0) {
     <span class="hidden cantidadIngrediente" id="intCantidad'.$value['ingrediente'].'">'.$value['cantidad'].'</span>
     <span id="'.$value['ingrediente'].'" class="my-2 totalIngrediente">0</span>
   </div>';
+  
   }
 }
 

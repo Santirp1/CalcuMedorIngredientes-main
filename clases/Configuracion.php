@@ -15,13 +15,12 @@ class Configuracion
         $this->cantidad = $cantidad;
         $this->unidadMedida = $unidadMedida;
         $this->precio = $precio;
-        
     }
-    public function getId() {return $this->id;}
-    public function setId($id) {$this->id = $id;}
-    public function getUsuario() {return $this->descripcion;}
-    public function getNombre() {return $this->cantidad;}
-    public function getApellido() {return $this->unidadMedida;}
-    public function getNombreApellido() {return "$this->nombre $this->apellido";}
-    public function getEmail() {return $this->email;}
+
+    public function getId() { return $this->id; }
+    public function setId($id) { $this->id = $id; }
+    public function getDescripcion() { return $this->descripcion; }
+    public function getCantidad() { return $this->cantidad; }
+    public function getUnidadMedida() { return $this->unidadMedida; }
+    public function getPrecio() { return $this->precio; }
 }
